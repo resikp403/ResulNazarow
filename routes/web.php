@@ -1,0 +1,25 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Bookings;
+use App\Http\Controllers\Stations;
+use App\Http\Controllers\Services;
+use App\Http\Controllers\Orders;
+use App\Http\Controllers\Payments;
+
+
+
+Route::get('/stations', [Stations::class, 'index']);
+Route::post('/stations', [Stations::class, 'store']);
+
+Route::get('/bookings', [Bookings::class, 'index']);
+Route::post('/bookings', [Bookings::class, 'store']);
+
+Route::get('/services', [Services::class, 'index']);
+Route::post('/services', [Services::class, 'store']);
+
+Route::get('/orders', [Orders::class, 'index']);
+Route::post('/orders', [Orders::class, 'store']);
+
+Route::get('/users', [Payments::class, 'index']);
+Route::post('/users', [Payments::class, 'store']);
