@@ -9,7 +9,7 @@ class Orders extends Controller
     //
     public function index()
     {
-        return Order::with(['user', 'service'])->get();
+        return Orders::with(['user', 'service'])->get();
     }
 
     public function store(Request $request)
@@ -21,6 +21,6 @@ class Orders extends Controller
             'total_price' => 'required|numeric|min:0',
         ]);
 
-        return Order::create($data);
+        return Orders::create($data);
     }
 }

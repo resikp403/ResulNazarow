@@ -8,10 +8,19 @@
         <div class="collapse navbar-collapse" id="navbars">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('transports.index') }}">Transports</a>
+                    <a class="nav-link" href="{{ route('bookings.index') }}">Bookings</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('packages.index') }}">Packages</a>
+                    <a class="nav-link" href="{{ route('stations.index') }}">Stations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('services.index') }}">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('orders.index') }}">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('payments.index') }}">Payments</a>
                 </li>
             </ul>
         </div>

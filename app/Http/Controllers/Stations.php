@@ -9,7 +9,7 @@ class Stations extends Controller
     //
     public function index()
     {
-        return Station::all();
+        return Stations::all();
     }
 
     public function store(Request $request)
@@ -20,6 +20,6 @@ class Stations extends Controller
             'status' => 'required|string',
         ]);
 
-        return Station::create($data);
+        return Stations::create($data);
     }
 }

@@ -9,7 +9,7 @@ class Bookings extends Controller
     //
     public function index()
     {
-        return Booking::with(['user', 'station'])->get();
+        return Bookings::with(['user', 'station'])->get();
     }
 
     public function store(Request $request)
@@ -22,7 +22,7 @@ class Bookings extends Controller
             'status' => 'required|string',
         ]);
 
-        return Booking::create($data);
+        return Bookings::create($data);
 
     }
 }

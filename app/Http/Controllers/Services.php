@@ -9,7 +9,7 @@ class Services extends Controller
     //
     public function index()
     {
-        return Service::all();
+        return Services::all();
     }
 
     public function store(Request $request)
@@ -19,6 +19,6 @@ class Services extends Controller
             'price' => 'required|numeric|min:0',
         ]);
 
-        return Service::create($data);
+        return Services::create($data);
     }
 }
